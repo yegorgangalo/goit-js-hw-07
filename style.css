@@ -1,0 +1,8 @@
+.gallery-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-img {
+  width: 200px;
+}
