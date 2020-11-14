@@ -51,3 +51,5 @@ document.querySelector('#gallery').append(...readyImg);
 document.querySelector('#gallery').classList.add('gallery-flex');
 const galleryImgArray = document.querySelectorAll('#gallery img');
 galleryImgArray.forEach(img => img.classList.add('gallery-img'));
+
+
