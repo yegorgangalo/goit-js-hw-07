@@ -29,7 +29,7 @@ const randomRGB = () => {
     const r = Math.round( 255 * Math.random() ).toString(16);
     const g = Math.round( 255 * Math.random() ).toString(16);
     const b = Math.round( 255 * Math.random() ).toString(16);
-    return r+g+b;
+    return `#${r+g+b}`;
 }
 // const amount = () => Number(inputRef.value);
 
@@ -41,7 +41,7 @@ const createBoxes = () => {
     const arrayEmpty = [...Array(quantity)];
     const arrayDiv = arrayEmpty.map(elem => {
         elem = document.createElement('div');
-        elem.style.backgroundColor = `#${randomRGB()}`;
+        elem.style.backgroundColor = randomRGB();
         elem.style.width = `${width}px`;
         elem.style.height = `${height}px`;
         width += 10;
